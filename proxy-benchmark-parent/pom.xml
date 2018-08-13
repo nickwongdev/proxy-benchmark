@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns="http://maven.apache.org/POM/4.0.0"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>proxy-benchmark</artifactId>
+		<groupId>com.yskts</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>proxy-benchmark-parent</artifactId>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>proxy-benchmark-core</module>
+		<module>proxy-benchmark-server</module>
+		<module>proxy-benchmark-proxy</module>
+		<module>proxy-benchmark-client</module>
+	</modules>
+
+	<properties>
+		<io.netty.version>4.1.28.Final</io.netty.version>
+	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>3.1.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-transport-native-epoll</artifactId>
+			<version>${io.netty.version}</version>
+			<classifier>linux-x86_64</classifier>
+		</dependency>
+	</dependencies>
+
+</project>

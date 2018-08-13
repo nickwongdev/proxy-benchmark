@@ -1,0 +1,55 @@
+{
+	"id": 104932,
+	"name": "The Great Gambini",
+	"type": "PLAYER",
+	"address": {
+		"street": "1234 Main St. SW",
+		"city": "Irvine",
+		"state": "CA",
+		"zip": 92618,
+		"country": "USA"
+	},
+	"games": [
+		{
+			"gameId": 90431,
+			"region": "US",
+			"purchaseDate": "2011-01-01"
+		},
+		{
+			"gameId": 93,
+			"region": "US",
+			"purchaseDate": "1999-11-01"
+		},
+		{
+			"gameId": 1123,
+			"region": "US",
+			"purchaseDate": "2001-09-21"
+		}
+	],
+	"licenses": [
+		{
+			"licenseId": 4938,
+			"dateAdded": "2004-03-12"
+		},
+		{
+			"licenseId": 4893,
+			"dateAdded": "2001-08-02"
+		},
+		{
+			"licenseId": 4321,
+			"dateAdded": "2002-02-22"
+		}
+	],
+	"notes": [
+		{
+			"noteId": 4723472938,
+			"date": "1999-01-02",
+			"note": "Customer called in for help creating account. Feedback sent to account creation team."
+		},
+		{
+			"noteId": 19938271234,
+			"date": "2018-07-01",
+			"note": "Customer called in with a login issue with game 12. Game account reset. Login checked."
+		}
+	]
+}
